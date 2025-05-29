@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: rgb(248, 0, 50);
+    padding: 20px;
+    color: white;
+}
+
+#fundo{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+body,html{
+    height: 100%;
+}
+
+#campologin{
+    width: 60%;
+    height: 80%;
+    background-color: white;
+}
+
+#login{
+    width: 100%;
+    height: 15%;
+    position: relative;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#login h2{
+    font-size: 1.75rem;
+    letter-spacing: 0.006rem;
+    font-weight: 700;
+    text-transform: lowercase;
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(102, 102, 102);
+}
+
+.navImg{
+    width: 36px;
+    height: 36px;
+    margin-left: -250px;
+    color: rgb(102, 102, 102);
+    margin-top: -5px;
+}
+
+#descricao{
+    width: 50%;
+    height: 15%;
+    margin-left: 200px;
+    color:rgb(102, 102, 102) ;
+    font-size: 0.875rem;
+    text-align: center;
+
+    
+}
+
+#campo{
+    width: 100%;
+    height: 70%;
+    margin-left: 5px;
+
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+label{
+    margin-bottom: 5px;
+    color: rgb(102, 102, 102);
+    margin-left: -280px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+input{
+    margin-bottom: 20px;
+    height: 45px;
+    width: 350px;
+    border-radius: 0.5rem;
+    border: 2px solid  rgb(102, 102, 102);
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid rgb(0, 177, 0); 
+    transition: 0.3s; 
+}
+
+.mudarsenha{
+    margin-left: 245px;
+    position: relative;
+    top: 24px;
+}
+
+#botao{
+    margin-bottom: 20px;
+    height: 45px;
+    width: 350px;
+    color: white;
+    background-color: rgb(248, 0, 50);
+    border: 1px solid rgb(248, 0, 50); 
+    border-radius: 0.5rem;
+    font-size: 18px;
+    font-weight: 700;
+    font-family:Helvetica, Arial, sans-serif ;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+#botao:hover{
+    box-shadow: inset 50px 50px 50px rgba(255, 255, 255, 0.2);
+    border: 2px solid #f5f5f5;
+}
+
+.formulario p{
+    color:rgb(102, 102, 102) ;
+    font-size: 16px;
+}
+
+.politica{
+    position: relative;
+    top: 15px;
+    text-align: center;
+}
+
+
+
+
