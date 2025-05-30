@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,8 +42,12 @@
             </div>
 
             <div id="carrinho">
-                <i class="fas fa-shopping-cart"></i>
+                <a href="carrinho.html" id="icone-carrinho">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="quantidade-carrinho">0</span>
+                </a>
             </div>
+
 
             <div id="cep">
                 <p>informe seu CEP</p>
@@ -100,40 +104,55 @@
         <h2>o que você viu está aqui!</h2>
     </div>
 <div id="produtos-0">
-        <div class="product" name="product-1">
+        <div class="product" data-id="1"  name="product-1">
             <img src="img/smartphone_samsung.webp" alt="celular Samsung Galaxy A16" class="product_img">
             <p class="descricao_product">celular Samsung Galaxy A16 <br> 128GB + 4GB de RAM</p>
             <p class="product_preco">R$ 1.099,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="celular Samsung Galaxy A16"
+            data-preco="1099.00"
+            data-imagem="img/smartphone_samsung.webp" >adicionar ao carrinho</button>
         </div>
 
-        <div class="product" name="product-1">
+        <div class="product"data-id="2"  name="product-1">
             <img src="img/smartphone_motorola.webp" alt="smartphone motorola " class="product_img">
             <p class="descricao_product">smartphone motorola  Moto G15  256GB 12GB Ram </p>
             <p class="product_preco">R$ 1.199,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone motorola"
+            data-preco="1199.00"
+            data-imagem="img/smartphone_motorola.webp">adicionar ao carrinho</button>
         </div>
 
         
-        <div class="product" name="product-1">
+        <div class="product" data-id="3"  name="product-1">
             <img src="img/smartphone - G24.webp" alt="smartphone-G24 " class="product_img">
             <p class="descricao_product">Smartphone Motorola Moto G24 Power 128GB 4GB+ 4GB Ram</p>
             <p class="product_preco">R$ 799,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone-G24"
+            data-preco="799.00"
+            data-imagem="img/smartphone - G24.webp">adicionar ao carrinho</button>
         </div>
 
-        <div class="product" name="product-1">
+        <div class="product" data-id="4" name="product-1">
             <img src="img/smartphone-galaxy A06.webp" alt="smartphone-galaxy-A06 " class="product_img">
             <p class="descricao_product">Smartphone Samsung Galaxy A06 128GB 4GB RAM</p>
             <p class="product_preco">R$ 749,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone-galaxy-A06"
+            data-preco="749.00"
+            data-imagem="img/smartphone-galaxy A06.webp">adicionar ao carrinho</button>
         </div>
 
-        <div class="product" name="product-1">
+        <div class="product" data-id="5"  name="product-1">
             <img src="img/Smartphone Motorola Moto G04S.webp" alt="smartphone motorola moto G04S " class="product_img">
             <p class="descricao_product">Smartphone Motorola Moto G04S 4G 128GB 8GB RAM</p>
             <p class="product_preco">R$ 719,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone motorola moto G04S"
+            data-preco="719.00"
+            data-imagem="img/Smartphone Motorola Moto G04S.webp">adicionar ao carrinho</button>
         </div>
 
 
@@ -150,40 +169,55 @@
 
 
     <div id="produtos-1">
-        <div class="product" name="product-1">
+        <div class="product" data-id="6"  name="product-1">
             <img src="img/smartphone_samsung.webp" alt="celular Samsung Galaxy A16" class="product_img">
             <p class="descricao_product">celular Samsung Galaxy A16 <br> 128GB + 4GB de RAM</p>
             <p class="product_preco">R$ 1.099,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="celular Samsung Galaxy A16"
+            data-preco="1099.00"
+            data-imagem="img/smartphone_samsung.webp">adicionar ao carrinho</button>
         </div>
 
-        <div class="product" name="product-1">
+        <div class="product" data-id="7"  name="product-1">
             <img src="img/smartphone_motorola.webp" alt="smartphone motorola " class="product_img">
             <p class="descricao_product">smartphone motorola  Moto G15  256GB 12GB Ram </p>
             <p class="product_preco">R$ 1.199,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone motorola"
+            data-preco="1199.00"
+            data-imagem="img/smartphone_motorola.webp">adicionar ao carrinho</button>
         </div>
 
         
-        <div class="product" name="product-1">
+        <div class="product" data-id="8"  name="product-1">
             <img src="img/smartphone - G24.webp" alt="smartphone-G24 " class="product_img">
             <p class="descricao_product">Smartphone Motorola Moto G24 Power 128GB 4GB+ 4GB Ram</p>
             <p class="product_preco">R$ 799,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone-G24"
+            data-preco="799.00"
+            data-imagem="img/smartphone - G24.webp">adicionar ao carrinho</button>
         </div>
 
-        <div class="product" name="product-1">
+        <div class="product" data-id="9"  name="product-1">
             <img src="img/smartphone-galaxy A06.webp" alt="smartphone-galaxy-A06 " class="product_img">
             <p class="descricao_product">Smartphone Samsung Galaxy A06 128GB 4GB RAM</p>
             <p class="product_preco">R$ 749,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone-galaxy-A06"
+            data-preco="749.00"
+            data-imagem="img/smartphone-galaxy A06.webp">adicionar ao carrinho</button>
         </div>
 
-        <div class="product" name="product-1">
+        <div class="product" data-id="10"  name="product-1">
             <img src="img/Smartphone Motorola Moto G04S.webp" alt="smartphone motorola moto G04S " class="product_img">
             <p class="descricao_product">Smartphone Motorola Moto G04S 4G 128GB 8GB RAM</p>
             <p class="product_preco">R$ 719,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone motorola moto G04S"
+            data-preco="719.00"
+            data-imagem="img/Smartphone Motorola Moto G04S.webp">adicionar ao carrinho</button>
         </div>
 
     </div>
@@ -236,40 +270,55 @@
     </div>
 
     <div id="produtos-1">
-        <div class="product" name="product-1">
+        <div class="product" data-id="11"  name="product-1">
             <img src="img/smartphone_samsung.webp" alt="celular Samsung Galaxy A16" class="product_img">
             <p class="descricao_product">celular Samsung Galaxy A16 <br> 128GB + 4GB de RAM</p>
             <p class="product_preco">R$ 1.099,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="celular Samsung Galaxy A16"
+            data-preco="1099.00"
+            data-imagem="img/smartphone_samsung.webp">adicionar ao carrinho</button>
         </div>
 
-        <div class="product" name="product-1">
+        <div class="product" data-id="12"  name="product-1">
             <img src="img/smartphone_motorola.webp" alt="smartphone motorola " class="product_img">
             <p class="descricao_product">smartphone motorola  Moto G15  256GB 12GB Ram </p>
             <p class="product_preco">R$ 1.199,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone motorola"
+            data-preco="1199.00"
+            data-imagem="img/smartphone_motorola.webp">adicionar ao carrinho</button>
         </div>
 
         
-        <div class="product" name="product-1">
+        <div class="product" data-id="13"  name="product-1">
             <img src="img/smartphone - G24.webp" alt="smartphone-G24 " class="product_img">
             <p class="descricao_product">Smartphone Motorola Moto G24 Power 128GB 4GB+ 4GB Ram</p>
             <p class="product_preco">R$ 799,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone-G24"
+            data-preco="799.00"
+            data-imagem="img/smartphone - G24.webp">adicionar ao carrinho</button>
         </div>
 
-        <div class="product" name="product-1">
+        <div class="product" data-id="14"  name="product-1">
             <img src="img/smartphone-galaxy A06.webp" alt="smartphone-galaxy-A06 " class="product_img">
             <p class="descricao_product">Smartphone Samsung Galaxy A06 128GB 4GB RAM</p>
             <p class="product_preco">R$ 749,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone-galaxy-A06"
+            data-preco="749.00"
+            data-imagem="img/smartphone-galaxy A06.webp">adicionar ao carrinho</button>
         </div>
 
-        <div class="product" name="product-1">
+        <div class="product" data-id="15"  name="product-1">
             <img src="img/Smartphone Motorola Moto G04S.webp" alt="smartphone motorola moto G04S " class="product_img">
             <p class="descricao_product">Smartphone Motorola Moto G04S 4G 128GB 8GB RAM</p>
             <p class="product_preco">R$ 719,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone motorola moto G04S"
+            data-preco="719.00"
+            data-imagem="img/Smartphone Motorola Moto G04S.webp">adicionar ao carrinho</button>
         </div>
     </div>
 
@@ -284,40 +333,55 @@
     </div>
 
     <div id="produtos-1">
-        <div class="product" name="product-1">
+        <div class="product" data-id="16"  name="product-1">
             <img src="img/smartphone_samsung.webp" alt="celular Samsung Galaxy A16" class="product_img">
             <p class="descricao_product">celular Samsung Galaxy A16 <br> 128GB + 4GB de RAM</p>
             <p class="product_preco">R$ 1.099,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="celular Samsung Galaxy A16"
+            data-preco="1099.00"
+            data-imagem="img/smartphone_samsung.webp">adicionar ao carrinho</button>
         </div>
 
-        <div class="product" name="product-1">
+        <div class="product" data-id="17"  name="product-1">
             <img src="img/smartphone_motorola.webp" alt="smartphone motorola " class="product_img">
             <p class="descricao_product">smartphone motorola  Moto G15  256GB 12GB Ram </p>
             <p class="product_preco">R$ 1.199,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone motorola"
+            data-preco="1199.00"
+            data-imagem="img/smartphone_motorola.webp">adicionar ao carrinho</button>
         </div>
 
         
-        <div class="product" name="product-1">
+        <div class="product"data-id="18"   name="product-1">
             <img src="img/smartphone - G24.webp" alt="smartphone-G24 " class="product_img">
             <p class="descricao_product">Smartphone Motorola Moto G24 Power 128GB 4GB+ 4GB Ram</p>
             <p class="product_preco">R$ 799,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone-G24"
+            data-preco="799.00"
+            data-imagem="img/smartphone - G24.webp">adicionar ao carrinho</button>
         </div>
 
-        <div class="product" name="product-1">
+        <div class="product" data-id="19"  name="product-1">
             <img src="img/smartphone-galaxy A06.webp" alt="smartphone-galaxy-A06 " class="product_img">
             <p class="descricao_product">Smartphone Samsung Galaxy A06 128GB 4GB RAM</p>
             <p class="product_preco">R$ 749,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone-galaxy-A06"
+            data-preco="749.00"
+            data-imagem="img/smartphone-galaxy A06.webp">adicionar ao carrinho</button>
         </div>
 
-        <div class="product" name="product-1">
+        <div class="product" data-id="20"  name="product-1">
             <img src="img/Smartphone Motorola Moto G04S.webp" alt="smartphone motorola moto G04S " class="product_img">
             <p class="descricao_product">Smartphone Motorola Moto G04S 4G 128GB 8GB RAM</p>
             <p class="product_preco">R$ 719,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone motorola moto G04S"
+            data-preco="719.00"
+            data-imagem="img/Smartphone Motorola Moto G04S.webp">adicionar ao carrinho</button>
         </div>
     </div>
 
@@ -328,40 +392,55 @@
 
     
     <div id="produtos-1">
-        <div class="product" name="product-1">
+        <div class="product" data-id="21"  name="product-1">
             <img src="img/smartphone_samsung.webp" alt="celular Samsung Galaxy A16" class="product_img">
             <p class="descricao_product">celular Samsung Galaxy A16 <br> 128GB + 4GB de RAM</p>
             <p class="product_preco">R$ 1.099,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="celular Samsung Galaxy A16"
+            data-preco="1099.00"
+            data-imagem="img/smartphone_samsung.webp">adicionar ao carrinho</button>
         </div>
 
-        <div class="product" name="product-1">
+        <div class="product" data-id="22"  name="product-1">
             <img src="img/smartphone_motorola.webp" alt="smartphone motorola " class="product_img">
             <p class="descricao_product">smartphone motorola  Moto G15  256GB 12GB Ram </p>
             <p class="product_preco">R$ 1.199,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone motorola"
+            data-preco="1199.00"
+            data-imagem="img/smartphone_motorola.webp">adicionar ao carrinho</button>
         </div>
 
         
-        <div class="product" name="product-1">
+        <div class="product" data-id="23"  name="product-1">
             <img src="img/smartphone - G24.webp" alt="smartphone-G24 " class="product_img">
             <p class="descricao_product">Smartphone Motorola Moto G24 Power 128GB 4GB+ 4GB Ram</p>
             <p class="product_preco">R$ 799,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone-G24"
+            data-preco="799.00"
+            data-imagem="img/smartphone - G24.webp">adicionar ao carrinho</button>
         </div>
 
-        <div class="product" name="product-1">
+        <div class="product"data-id="24"  name="product-1">
             <img src="img/smartphone-galaxy A06.webp" alt="smartphone-galaxy-A06 " class="product_img">
             <p class="descricao_product">Smartphone Samsung Galaxy A06 128GB 4GB RAM</p>
             <p class="product_preco">R$ 749,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone-galaxy-A06"
+            data-preco="749.00"
+            data-imagem="img/smartphone-galaxy A06.webp">adicionar ao carrinho</button>
         </div>
 
-        <div class="product" name="product-1">
+        <div class="product" data-id="25"  name="product-1">
             <img src="img/Smartphone Motorola Moto G04S.webp" alt="smartphone motorola moto G04S " class="product_img">
             <p class="descricao_product">Smartphone Motorola Moto G04S 4G 128GB 8GB RAM</p>
             <p class="product_preco">R$ 719,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone motorola moto G04S"
+            data-preco="719.00"
+            data-imagem="img/Smartphone Motorola Moto G04S.webp">adicionar ao carrinho</button>
         </div>
     </div>
 
@@ -372,43 +451,61 @@
 
     
     <div id="produtos-1">
-        <div class="product" name="product-1">
+        <div class="product" data-id="26"  name="product-1">
             <img src="img/smartphone_samsung.webp" alt="celular Samsung Galaxy A16" class="product_img">
             <p class="descricao_product">celular Samsung Galaxy A16 <br> 128GB + 4GB de RAM</p>
             <p class="product_preco">R$ 1.099,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="celular Samsung Galaxy A16"
+            data-preco="1099.00"
+            data-imagem="img/smartphone_samsung.webp">adicionar ao carrinho</button>
         </div>
 
-        <div class="product" name="product-1">
+        <div class="product" data-id="27"  name="product-1">
             <img src="img/smartphone_motorola.webp" alt="smartphone motorola " class="product_img">
             <p class="descricao_product">smartphone motorola  Moto G15  256GB 12GB Ram </p>
             <p class="product_preco">R$ 1.199,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone motorola"
+            data-preco="1199.00"
+            data-imagem="img/smartphone_motorola.webp">adicionar ao carrinho</button>
         </div>
 
         
-        <div class="product" name="product-1">
+        <div class="product" data-id="28"  name="product-1">
             <img src="img/smartphone - G24.webp" alt="smartphone-G24 " class="product_img">
             <p class="descricao_product">Smartphone Motorola Moto G24 Power 128GB 4GB+ 4GB Ram</p>
             <p class="product_preco">R$ 799,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
-        </div>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone-G24"
+            data-preco="799.00"
+            data-imagem="img/smartphone - G24.webp">adicionar ao carrinho</button>
+        </div> 
 
-        <div class="product" name="product-1">
+        <div class="product" data-id="29"  name="product-1">
             <img src="img/smartphone-galaxy A06.webp" alt="smartphone-galaxy-A06 " class="product_img">
             <p class="descricao_product">Smartphone Samsung Galaxy A06 128GB 4GB RAM</p>
             <p class="product_preco">R$ 749,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone-galaxy-A06"
+            data-preco="749.00"
+            data-imagem="img/smartphone-galaxy A06.webp">adicionar ao carrinho</button>
         </div>
 
-        <div class="product" name="product-1">
+        <div class="product" data-id="30"  name="product-1">
             <img src="img/Smartphone Motorola Moto G04S.webp" alt="smartphone motorola moto G04S " class="product_img">
             <p class="descricao_product">Smartphone Motorola Moto G04S 4G 128GB 8GB RAM</p>
             <p class="product_preco">R$ 719,00</p>
-            <button class="product_btn">adicionar ao carrinho</button>
+            <button class="product_btn add-carrinho" 
+            data-nome="smartphone motorola moto G04S"
+            data-preco="719.00"
+            data-imagem="img/Smartphone Motorola Moto G04S.webp">adicionar ao carrinho</button>
         </div>
     </div>
     
+
+
+    <script src="js/main.js"></script>
 
 </body>
 </html>

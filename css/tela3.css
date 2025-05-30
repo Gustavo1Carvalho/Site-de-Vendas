@@ -70,6 +70,17 @@ h1{
     top: 55px;
     margin-left: 1150px;
 }
+
+#icone-carrinho {
+color: white;
+text-decoration: none;
+}
+
+#quantidade-carrinho {
+color: white;
+font-weight: bold;
+margin-left: 5px;
+}
 .descricao{
     position: relative;
     top: 46px;
