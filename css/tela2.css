@@ -102,6 +102,8 @@ input{
     justify-content: center;
     margin-top: -50px;
     gap: 5px;
+    position: relative;
+    top: 40px;
 }
 
 .mf{
@@ -133,6 +135,8 @@ margin: 0;
     align-items: center;
     justify-content: center;
     margin-top: 75px;
+    position: relative;
+    top: 40px;
 }
 
 body,html{

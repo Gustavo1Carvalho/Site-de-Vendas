@@ -1,49 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/tela2.css">
-    <title>Document</title>
+    <title>Cadastro - Loja GK</title>
 </head>
+
 <body>
     <header>
-        <h1>Loja Gk</h1>
+        <h1>Loja GK</h1>
     </header>
     <div id="fundo">
         <div id="campocadastro">
             <div id="cadastro">
-                <h2>criar seu cadastro</h2>
-                <p>veja seus pedidos de forma fácil, compre mais rápido e tenha uma <br> experiência personalizada :)</p>
+                <h2>Criar seu cadastro</h2>
+                <p>Veja seus pedidos de forma fácil, compre mais rápido e tenha uma <br> experiência personalizada :)
+                </p>
                 <div id="descricao">
                     <p>*campos obrigatórios</p>
                 </div>
-                    <form class="formulario">
-                        <label for="nome">Nome</label>
-                        <input type="nome">
-                        <label for="email">Email</label>
-                        <input type="email">
-                        <label for="senha">Crie sua senha</label>
-                        <input type="password" name="senha" value="senha">
-                        <label for="CPF">CPF</label>
-                        <input type="CPF" id="cpf" name="cpf" maxlength="14" placeholder="000.000.000-00">
-                    </form>
+
+                <!-- FORMULÁRIO ABRE AQUI -->
+                <form class="formulario" method="POST" action="php/cadastro.php">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+
+                    <label for="senha">Crie sua senha</label>
+                    <input type="password" name="senha" required>
+
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" maxlength="14" placeholder="000.000.000-00" required>
+
                     <div id="genero">
-                        <input type="radio" class="mf" name="Genero" value="Masculino">
+                        <input type="radio" class="mf" name="genero" value="Masculino" required>
                         <label for="Masculino">Masculino</label>
-            
-                        <input type="radio" class="mf" name="Genero" value="Feminino">
+
+                        <input type="radio" class="mf" name="genero" value="Feminino">
                         <label for="Feminino">Feminino</label>
-            
-                        <input type="radio" class="mf" name="Genero" value="Outro">
+
+                        <input type="radio" class="mf" name="genero" value="Outro">
                         <label for="Outro">Outro</label>
                     </div>
-                    <div id="bt"> 
+
+                    <div id="bt">
                         <button type="submit" id="botao">Cadastrar</button>
                     </div>
+                </form>
+                <!-- FORMULÁRIO FECHA AQUI -->
+
             </div>
         </div>
     </div>
-    
+
 </body>
+
 </html>
