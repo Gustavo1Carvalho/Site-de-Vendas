@@ -1,145 +1,163 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-header{
+
+body, html {
+    height: 100%;
+}
+
+header {
     background-color: rgb(248, 0, 50);
     padding: 20px;
     color: white;
+    text-align: center;
 }
 
-#fundo{
+#fundo {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-color: white;
 }
 
-#campocadastro{
-    width: 80%;
-    height: 80%;
+#campocadastro {
+    width: 90%;
+    max-width: 600px;
 }
-#cadastro{
-    color:rgb(102, 102, 102) ;
+
+#cadastro {
+    color: rgb(102, 102, 102);
     width: 100%;
-    height: 15%;
 }
 
-#cadastro h2{
-    display:flex;
+#cadastro h2 {
+    display: flex;
     align-items: center;
     justify-content: center;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
-
 }
 
-#cadastro p{
+#cadastro p {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 18px;
-    position: relative;
-    top: 15px;
-
+    margin-top: 10px;
 }
-#descricao{
+
+#descricao {
     width: 100%;
-    height: 80%;
-    position: relative;
-    top: 20px;
+    margin-top: 20px;
 }
 
-#descricao p{
-    position: relative;
-    top: 4px;
+#descricao p {
     text-align: center;
 }
 
-
-
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
-    width: fit-content; /* Ajusta a largura do formulário ao conteúdo */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    position: relative;/* Mantém o posicionamento padrão*/
-    position: relative;
-    top: -50px;
-    
-    
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
-label{
+label {
     margin-bottom: 5px;
     color: rgb(102, 102, 102);
-    margin-left: -150px;
     font-family: Helvetica, Arial, sans-serif;
-    position: relative;
-    top: 60px;
-    margin-left: 10px;
-    margin: 0;
 }
 
-input{
+input {
     margin-bottom: 20px;
     height: 45px;
-    width: 350px;
+    width: 100%;
     border-radius: 0.5rem;
-    border: 2px solid  rgb(102, 102, 102);
+    border: 2px solid rgb(102, 102, 102);
     outline: none;
-    position: relative;
-    top: 60px;
+    padding: 0 10px;
 }
 
-#genero{
+#genero {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -50px;
-    gap: 5px;
-    position: relative;
-    top: 40px;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-.mf{
-width: 20px;
-height: 20px;
-margin: 0;
+.mf {
+    width: 20px;
+    height: 20px;
 }
-#botao{
-    margin-bottom: 20px;
+
+#botao {
     height: 45px;
-    width: 350px;
+    width: 100%;
     color: white;
     background-color: rgb(248, 0, 50);
-    border: 1px solid rgb(248, 0, 50); 
+    border: 1px solid rgb(248, 0, 50);
     border-radius: 0.5rem;
     font-size: 18px;
     font-weight: 700;
-    font-family:Helvetica, Arial, sans-serif ;
+    font-family: Helvetica, Arial, sans-serif;
     cursor: pointer;
     transition: box-shadow 0.3s ease;
 }
 
-#botao:hover{
+#botao:hover {
     box-shadow: inset 50px 50px 50px rgba(255, 255, 255, 0.2);
     border: 2px solid #f5f5f5;
 }
-#bt{
+
+#bt {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 75px;
-    position: relative;
-    top: 40px;
+    margin-top: 30px;
 }
 
-body,html{
-    height: 100%;
+/* 🔥 Responsividade */
+@media (max-width: 768px) {
+    #cadastro h2 {
+        font-size: 28px;
+    }
+
+    #cadastro p {
+        font-size: 16px;
+    }
+
+    input, #botao {
+        width: 100%;
+    }
+
+    label {
+        font-size: 14px;
+    }
 }
 
+@media (max-width: 480px) {
+    #cadastro h2 {
+        font-size: 24px;
+    }
+
+    #cadastro p {
+        font-size: 14px;
+    }
+
+    .formulario {
+        margin-top: 10px;
+    }
+
+    input, #botao {
+        height: 40px;
+        font-size: 16px;
+    }
+}

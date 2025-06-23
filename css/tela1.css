@@ -1,144 +1,201 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-header{
+
+body, html {
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
     background-color: rgb(248, 0, 50);
     padding: 20px;
     color: white;
+    text-align: center;
 }
 
-#fundo{
+#fundo {
     background-color: white;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+    padding: 20px;
 }
 
-body,html{
-    height: 100%;
-}
-
-#campologin{
+#campologin {
     width: 60%;
-    height: 80%;
+    max-width: 500px;
+    min-width: 300px;
     background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
 }
 
-#login{
+#login {
     width: 100%;
-    height: 15%;
-    position: relative;
-    top: 40px;
+    height: auto;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
 
-#login h2{
+#login h2 {
     font-size: 1.75rem;
     letter-spacing: 0.006rem;
     font-weight: 700;
     text-transform: lowercase;
-    font-family: Helvetica, Arial, sans-serif;
     color: rgb(102, 102, 102);
 }
 
-.navImg{
+.navImg {
     width: 36px;
     height: 36px;
-    margin-left: -250px;
+    margin-right: 10px;
     color: rgb(102, 102, 102);
-    margin-top: -5px;
+    position: relative;
+    left: -250px;
 }
 
-#descricao{
-    width: 50%;
-    height: 15%;
-    margin-left: 200px;
-    color:rgb(102, 102, 102) ;
+#descricao {
+    width: 100%;
+    color: rgb(102, 102, 102);
     font-size: 0.875rem;
     text-align: center;
-
-    
+    margin-bottom: 20px;
 }
 
-#campo{
+#campo {
     width: 100%;
-    height: 70%;
-    margin-left: 5px;
-
 }
 
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
-label{
+label {
     margin-bottom: 5px;
     color: rgb(102, 102, 102);
-    margin-left: -280px;
-    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+    text-align: left;
+    max-width: 350px;
 }
 
-input{
+input {
     margin-bottom: 20px;
     height: 45px;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     border-radius: 0.5rem;
-    border: 2px solid  rgb(102, 102, 102);
+    border: 2px solid rgb(102, 102, 102);
     outline: none;
+    padding: 0 10px;
 }
 
 input:focus {
     border: 2px solid rgb(0, 177, 0); 
-    transition: 0.3s; 
+    transition: 0.3s;
 }
 
-.mudarsenha{
-    margin-left: 245px;
-    position: relative;
-    top: 24px;
-}
-
-#botao{
+.mudarsenha {
+    width: 100%;
+    max-width: 350px;
+    text-align: right;
+    margin-top: -15px;
     margin-bottom: 20px;
+    font-size: 0.85rem;
+}
+
+#botao {
     height: 45px;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     color: white;
     background-color: rgb(248, 0, 50);
     border: 1px solid rgb(248, 0, 50); 
     border-radius: 0.5rem;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 700;
-    font-family:Helvetica, Arial, sans-serif ;
     cursor: pointer;
     transition: box-shadow 0.3s ease;
     text-decoration: none;
 }
 
-#botao:hover{
+#botao:hover {
     box-shadow: inset 50px 50px 50px rgba(255, 255, 255, 0.2);
     border: 2px solid #f5f5f5;
 }
 
-.formulario p{
-    color:rgb(102, 102, 102) ;
-    font-size: 16px;
-}
-
-.politica{
-    position: relative;
-    top: 15px;
+.formulario p {
+    color: rgb(102, 102, 102);
+    font-size: 0.9rem;
     text-align: center;
 }
 
+.politica {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgb(102, 102, 102);
+}
 
+@media (max-width: 768px) {
+    #campologin {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
 
+    #login h2 {
+        font-size: 1.5rem;
+    }
 
+    input, #botao {
+        width: 90%;
+    }
+
+    label, .mudarsenha {
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .mudarsenha {
+        margin-top: 0;
+        position: static;
+    }
+
+    #descricao {
+        margin-left: 0;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    #login h2 {
+        font-size: 1.3rem;
+    }
+
+    input, #botao {
+        width: 100%;
+    }
+
+    label {
+        margin-left: 0;
+    }
+
+    .mudarsenha {
+        text-align: right;
+    }
+}
